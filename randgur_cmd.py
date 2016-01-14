@@ -18,13 +18,14 @@ def main():
     opener = urllib.request.build_opener()
     opener.add_headers = [("User-agent", "Mozilla/5.0")] #see http://webaim.org/blog/user-agent-string-history/
 
-    while num_pics > 0:
+    count = 0
+    while count < num_pics:
         url = rand_img_url()
 
         try:
             opener.open(url)
             print("Success:: " + url)
-            num_pics -= 1
+            count += 1
             if open:
                 webbrowser.open(url, new=0, autoraise=True)
         except KeyboardInterrupt:
