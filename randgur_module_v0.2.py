@@ -3,18 +3,17 @@
 import sys
 import string, requests
 import webbrowser
-import urllib.request
 from os import system
+from urllib.request import build_opener
 from urllib.error import HTTPError
 from random import choice
-from tkinter import *
 
 class Rangur:
     def __init__(self, open_flag):
         self.open_flag = open_flag
 
     def grab_some_images(self, num_pics):
-        opener = urllib.request.build_opener()
+        opener = build_opener()
         opener.add_headers = [("User-agent", "Mozilla/5.0")] #see http://webaim.org/blog/user-agent-string-history/
     
         count = 0
