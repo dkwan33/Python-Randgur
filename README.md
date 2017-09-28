@@ -1,5 +1,5 @@
 # Python-Randgur
-Random Imgur Generator in Python. Created as a multi-stage project for teaching myself Python.
+Random Imgur Generator in Python 3. Created as a multi-stage project for teaching myself Python.
 
 1 - randgur_cmd - Runs in command line. Opens imgur images in browser. - Complete
 
